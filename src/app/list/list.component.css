@@ -44,7 +44,7 @@
   margin-top: 15px;
   position: relative;
 }
-.box-btn button {
+.box-btn__btn {
   cursor: pointer;
   background-color: transparent;
   border: 6px solid #00175b;
@@ -54,7 +54,11 @@
   font-weight: bold;
   outline: none;
 }
-.box-btn button::after {
+.box-btn__btn:active {
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.42) , #00175b);
+  color: #fff;
+}
+.box-btn__btn::after {
   content: 'Click to see a planet';
   display: block;
   position: absolute;
@@ -68,7 +72,7 @@
   opacity: 0;
   transition: opacity .4s;
 }
-.box-btn button:hover::after {
+.box-btn__btn:hover::after {
   opacity: 1;
 }
 
