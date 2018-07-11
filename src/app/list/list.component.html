@@ -1,0 +1,27 @@
+<section>
+  <div class="box">
+    <div class="box-planet">
+      <div *ngIf="!image">
+        <div class="loader" *ngIf="!hasValue"></div>
+        <div *ngIf="hasValue">
+          <header>
+            <h1 class="box-planet__title">{{description.name}}</h1>
+          </header>
+          <article class="box-planet__descriptions">
+            <div>Population: {{description.population}}</div>
+            <div>Climate: {{description.climate}}</div>
+            <div>Terrain: {{description.terrain}}</div>
+            <div>Films: {{description.films.length}}</div>
+          </article>
+        </div>
+      </div>
+      <div class="box-planet__boximage" *ngIf="image">
+        <p class="box-planet__text">Come here, see a planet</p>
+        <div class="box-planet__img"></div>
+      </div>
+    </div>
+    <div class="box-btn">
+      <button (click)="getSpecificPlanet()">Next</button>
+    </div>
+  </div>
+</section>
