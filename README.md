@@ -9,3 +9,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Deploy
 
 Eu fiz deploy da aplicação no netilify para que fique mais facil de ver.
+URL: https://random-starwars.netlify.com
