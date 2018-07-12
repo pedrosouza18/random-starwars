@@ -21,10 +21,10 @@ export class ListComponent {
 
     public getSpecificPlanet() {
       const randomNumber = Math.floor(Math.random() * 61 + 1);
+      this.hasValue = false;
       this.service.getPlanets(randomNumber)
         .then((data: Planet) => {
           this.image = false;
-          this.hasValue = false;
           setTimeout(() => {
             this.description.name = data.name;
             this.description.climate = data.climate;
